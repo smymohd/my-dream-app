@@ -15,7 +15,7 @@ export class EditRecipeComponent implements OnInit, OnDestroy {
 
 
   private subscriptions: Subscription[] = [];
-  private recipe: Recipe;
+  public recipe: Recipe;
   private instructions: FormArray;
   private ingredients: FormArray;
   public recipeForm: FormGroup;
