@@ -39,7 +39,7 @@
           <label class="mb-0"><h4 class="mb-0">Image Url:</h4></label>
       </div>
       <div class="col-6">
-        <input type="text" class="form-control w-100" placeholder="ImageUrl.." formControlName="image Url"> 
+        <input type="text" class="form-control w-100" placeholder="ImageUrl.." formControlName="imageUrl"> 
       </div>
       <div class="col-1"></div>
     </div> 
@@ -56,7 +56,7 @@
             <label class="mb-0"><h4 class="mb-0">{{i+1}}: </h4></label>
           </div>
           <div class="col-6 d-flex align-items-center">
-            <input type="text" class="form-control w-100" placeholder="add an instruction..." formControlName="string">
+            <input type="text" class="form-control w-100" placeholder="add an instruction..." formControlName="instructions">
           </div>
           <div class="col-1 d-flex align-items-center">
             <button class="btn btn-danger" (click)="deleteInstruction(i)">Delete</button>
