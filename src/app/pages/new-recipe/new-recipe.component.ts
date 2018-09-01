@@ -82,7 +82,8 @@ export class  NewRecipeComponent implements OnInit, OnDestroy {
     arrayControl.removeAt(index);
   }
 
-  submitForm(): void {
+  submitForm(ev): void {
+    ev.preventDefault(){
     if (this.recipeForm.valid) {
       const {title, description, serves, imageUrl, ingredients, instructions} = this.recipeForm.value;
       const filteredInstructions = instructions.map(item => item.step);
@@ -100,7 +101,7 @@ export class  NewRecipeComponent implements OnInit, OnDestroy {
       console.log("Form Error");
     }
   }
-
+  }
   
   back() {
     this.location.back();
