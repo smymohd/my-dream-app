@@ -51,7 +51,7 @@ export class  NewRecipeComponent implements OnInit, OnDestroy {
     this.ingredients = this.recipeForm.get('ingredients') as FormArray;
 
 
-    this.addInstructiont();
+    this.addInstruction();
     this.addIngredient();
   }
 
@@ -70,7 +70,7 @@ export class  NewRecipeComponent implements OnInit, OnDestroy {
   addIngredient(): void {
     this.ingredients.push(this.createIngredient('', ''));
   }
-  addInstructiont(): void {
+  addInstruction(): void {
     this.instructions.push(this.createInstruction(''));
   }
   deleteInstruction(index: number): void {
